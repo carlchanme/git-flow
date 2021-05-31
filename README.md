@@ -5,20 +5,24 @@ This instructions are for macbook/linux only. To get started with git-flow, down
 `brew install git-flow`
 
 Then download the git-flow plugin for vscode
+
 ![](image/gitflow-plugin.png)
 
 Next is to enable your project by executing `git flow init` into the terminal in your project
 folder
+
 ![](image/git-flow-init.png)
 
 to execute git flow commands, just press `cmd+shift+p` to open quick command popup. then type
 `gitflow` to see all the list of commands for git flow.
+
 ![](image/git-flow-command.png)
 
 ## How it works
 Instead of a single master branch, the workflow uses two branches which are the master branch, 
 and the develop branch to record your history. The Develop branch serves as teh integration 
 branch for all features while the master branch stores all the official releases.
+
 ![](image/master-develop.svg)
 
 ## Feature Branch
@@ -26,6 +30,7 @@ Each new feature, change request or bug fix(except hotfix) should create a new f
 to do your code change. You should never directly modify the code in develop branch.
 
 In the example below, we have added 2 features to our working develop branch.
+
 ![](image/git-flow-feature.svg)
 
 When the feature branch is completed, it will be merged back to the develop branch. 
@@ -34,9 +39,11 @@ branch are generally created off the latest develop branch.
 
 ### Create a feature branch
 To start a feature using vs code, open the quick command and type `gitflow: feature: start`
+
 ![](image/feature-start.png)
 
 Then type in your branch name.
+
 ![](image/feature-start-title.png)
 
 if you prefer using terminal. Then u can use the git-flow extension by typing
@@ -52,6 +59,7 @@ For example : `#001-add-user-module`
 When a feature is completed. you can mark the feature as completed and the branch will
 autometically be merged back into the develop branch. To complete a feature, in vs code,
 open the quick command and type `gitflow: feature: finish`
+
 ![](image/feature-finish.png)
 
 if you prefer using terminal. You can type the following:
@@ -65,13 +73,16 @@ Only minor fixes or finishing touches are allowed. When you have finalize the re
 Just use the git-flow extension to set the release as finish and git-flow will automatically
 help you to merge the release to the develop and master branch. It will also create a version 
 tag as shown in the image below.
+
 ![](image/git-flow-release.svg)
 
 ### Create a release branch
 To create a release using vs code, open the quick command and type `gitflow: release: start`
+
 ![](image/release-start.png)
 
 Then type in your branch name.
+
 ![](image/release-start-title.png)
 
 if you prefer using terminal. Then u can use the git-flow extension by typing
@@ -85,6 +96,7 @@ tidy and KISS
 When a release is finalized. you can mark the release as finished and the branch will
 autometically be merged back into the develop and master branch. To complete a release, in vs code,
 open the quick command and type `gitflow: release: finish`
+
 ![](image/release-finish.png)
 
 if you prefer using terminal. You can type the following:
@@ -97,13 +109,16 @@ The Hotfix branch is created only when there is a production issue. You should u
 sparingly as this might cause merge conflicts. Hotfix branch will be created from the master
 branch. After the hotfix branch is finished. Gitflow will automatically commit the hotfix to
 the master and dev branch.
+
 ![](image/git-flow-hotfix.svg)
 
 ### Create a hotfix branch
 To create a hotfix using vs code, open the quick command and type `gitflow: hotfix: start`
+
 ![](image/hotfix-start.png)
 
 Then type in your branch name.
+
 ![](image/hotfix-start-title.png)
 
 if you prefer using terminal. Then u can use the git-flow extension by typing
@@ -116,6 +131,7 @@ Hotfix branch name will follow the same naming convention as the feature branch.
 When a hotfix is finalized. you can mark the hotfix as finished, and the branch will
 automatically be merged back into develop and master branch. To complete a hotfix, in vs code,
 open the quick command and type `gitflow: hotfix: finish`
+
 ![](image/hotfix-finish.png)
 
 if you prefer using terminal. You can type the following:
