@@ -72,23 +72,52 @@ To create a release using vs code, open the quick command and type `gitflow: rel
 ![](image/release-start.png)
 
 Then type in your branch name.
-![](image/feature-start-title.png)
+![](image/release-start-title.png)
 
 if you prefer using terminal. Then u can use the git-flow extension by typing
 
-`git flow feature start feature_branch`
+```git flow release start 0.1.0```
 
-Your branch name should be short, actionable description of
-what the task is about. If there's a tracker ID, then put the tracker id in front.
-Follow snake case for your naming convension. `trackerid-action-description`
-For example : `#001-add-user-module`
+Release branhyc name should only be the version you are planning to release. this will make it
+tidy and KISS
 
-### Complete a feature branch
-When a feature is completed. you can mark the feature as completed and the branch will
-autometically be merged back into the develop branch. To complete a feature, in vs code,
-open the quick command and type `gitflow: feature: finish`
-![](image/feature-finish.png)
+### Complete a release branch
+When a release is finalized. you can mark the release as finished and the branch will
+autometically be merged back into the develop and master branch. To complete a release, in vs code,
+open the quick command and type `gitflow: release: finish`
+![](image/release-finish.png)
 
 if you prefer using terminal. You can type the following:
 
-`git flow feature finish feature_branch`
+`git flow release finish '0.1.0'`
+
+
+## Hotfix Branch
+The Hotfix branch is created only when there is a production issue. You should use hot fix 
+sparingly as this might cause merge conflicts. Hotfix branch will be created from the master
+branch. After the hotfix branch is finished. Gitflow will automatically commit the hotfix to
+the master and dev branch.
+![](image/git-flow-hotfix.svg)
+
+### Create a hotfix branch
+To create a hotfix using vs code, open the quick command and type `gitflow: hotfix: start`
+![](image/hotfix-start.png)
+
+Then type in your branch name.
+![](image/hotfix-start-title.png)
+
+if you prefer using terminal. Then u can use the git-flow extension by typing
+
+```git flow hotfix start hotfix_branch```
+
+Hotfix branch name will follow the same naming convention as the feature branch.
+
+### Complete a hotfix branch
+When a hotfix is finalized. you can mark the hotfix as finished, and the branch will
+automatically be merged back into develop and master branch. To complete a hotfix, in vs code,
+open the quick command and type `gitflow: hotfix: finish`
+![](image/hotfix-finish.png)
+
+if you prefer using terminal. You can type the following:
+
+`git flow hotfix finish hotfix_branch`
