@@ -1,1 +1,1 @@
-//add new config
+//config 2 updated
