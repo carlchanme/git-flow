@@ -1,1 +1,1 @@
-// add config 6
+// update config 6
