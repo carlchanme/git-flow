@@ -1,19 +1,34 @@
 # Git Flow
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-1. [About The Project](#about-the-project)
-2. [Getting Started](#getting-started)
-3. [How it works](#how-it-works)
-  1. [Feature Branch](#feature-branch)
-    - [Create a feature branch](#create-a-feature-branch)
-    - [Complete a feature branch](#complete-a-feature-branch)
-  2. [Release Branch](#release-branch)
-    - [Create a release branch](#create-a-release-branch)
-    - [Complete a release branch](#complete-a-release-branch)
-  3. [Hotfix Branch](#hotfix-branch)
-    - [Create a hotfix branch](#create-a-hotfix-branch)
-    - [Complete a hotfix branch](#complete-a-hotfix-branch)
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#how-it-works">How it works</a></li>
+    <ol>
+      <li><a href="#feature-branch">Feature Branch</a></li>
+        <ul>
+          <li><a href="#create-a-feature-branch">Create a feature branch</a></li>
+          <li><a href="#complete-a-feature-branch">Complete a feature branch</a></li>
+        </ul>
+      <li><a href="#release-branch">Release Branch</a></li>
+        <ul>
+          <li><a href="#create-a-release-branch">Create a release branch</a></li>
+          <li><a href="#complete-a-release-branch">Complete a release branch</a></li>
+        </ul>
+      <li><a href="#hotfix-branch">Hotfix Branch</a></li>
+        <ul>
+          <li><a href="#create-a-hotfix-branch">Create a hotfix branch</a></li>
+          <li><a href="#complete-a-hotfix-branch">Complete a hotfix branch</a></li>
+        </ul>
+    </ol>
+  </ol>
+</details>
 
 ## About The Project
 This project is to cover the usage of git flow.
